@@ -64,7 +64,7 @@ Creates a new contact with the values sent in the body part of the request. If t
 Updates an already existing contact corresponding to the id passed as a parameter with the data sent in the body part. It returns error if data sent is not valid or if a contact with this id does not exist.
 
 ### Tests
-Test have been written for the whole functionality of the API and they are located in **test/test.js** file. You can run them by executing npm test. Tests are written with Supertest.js, Mocha.js and Chai.js libraries.
+Test have been written for the whole functionality of the API and they are located in **test/test.js** file. You can run them by executing `npm test`. Tests are written with Supertest.js, Mocha.js and Chai.js libraries.
 
 ### How to run it
 
