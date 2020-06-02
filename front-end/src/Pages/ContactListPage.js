@@ -4,6 +4,7 @@ import {ContactContext} from '../Context/ContactContext'
 import Alert, {showAlert} from '../Components/Alert'
 import {callAllContacts} from '../APIManager'
 
+//A custom component representing the Contact list page
 const ContactListPage = () => {
 	const [state, dispatch] = useContext(ContactContext);
 	const [loading, setLoading] = useState(true);

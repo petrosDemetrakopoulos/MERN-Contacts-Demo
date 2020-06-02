@@ -1,3 +1,5 @@
+//The part that handlea the communication with the API.
+//Every HTTP request to the API is sent via this layer.
 const APIAddress = 'http://localhost:8080/api/contacts/';
 export async function callCreateContact(data) {
 	const resp = fetch(APIAddress, {

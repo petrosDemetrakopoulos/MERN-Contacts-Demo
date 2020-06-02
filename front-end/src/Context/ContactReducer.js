@@ -1,3 +1,4 @@
+//The reducer that returns the next state of the app after an action
 export default function reducer(state, action) {
   switch (action.type) {
     case 'FETCH_CONTACTS': {

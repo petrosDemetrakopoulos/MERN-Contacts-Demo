@@ -6,6 +6,8 @@ import PhoneList from "./PhoneList";
 import { showAlert } from "../Components/Alert";
 import {callCreateContact, callUpdateContact} from '../APIManager'
 
+//A custom component representing the form showing the details of a contact.
+//It is used both for the creation of a new contact and the edit of the already existing contacts
 export default function ContactForm({ contact }) {
   const [state, dispatch] = useContext(ContactContext);
   const [phones, setPhones] = useState(contact.phones || []);
@@ -42,8 +44,9 @@ export default function ContactForm({ contact }) {
   const onSubmit = async (data) => {
     if (contact._id) {
       if(!data.phones){
-        data.phones = []; // means the user delete the last phone field, so the array does not exist in the form
-                          // as it is an update operation , it will not alter the phones
+        data.phones = []; // means the user deleted the last phone field, so the array does not exist in the form
+                          // as it is an update operation , the API will not alter the phones if the field is not present in the payload
+                          // so we set it to empty array
       }
       await updateContact(data);
     } else {

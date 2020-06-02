@@ -4,6 +4,7 @@ import {ContactContext} from '../Context/ContactContext'
 import {showAlert} from '../Components/Alert'
 import {callContactById} from '../APIManager'
 
+//A custom component representing the Form page
 const ContactFormPage = ({match}) => {
 	const [state, dispatch] = useContext(ContactContext);
 	const [loading, setLoading] = useState(true);

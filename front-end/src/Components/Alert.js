@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Toast from "react-bootstrap/Toast";
 
+//A custom component representing the alerts shown on the right of the screen after an action
 export default function Alert({ message }) {
   const [show, setShow] = useState(true);
 
@@ -21,8 +22,7 @@ export default function Alert({ message }) {
 }
 
 export function showAlert(dispatch, error) {
-  const err = error.response ? error.response.data : error; // check if server or network error
-  console.log(error);
+  const err = error.response ? error.response.data : error; // if it is an error, it will not have data field, so we present it as it is
   dispatch({
     type: "SHOW_NOTIFICATION",
     payload: {

@@ -9,6 +9,8 @@ const initialState = {
   message: {}
 };
 
+//This function provides the main context of the app. 
+//The components of the app share the state via ContactContextProvider
 export const ContactContextProvider = props => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { children } = props;

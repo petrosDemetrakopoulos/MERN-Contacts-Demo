@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PhoneField from './PhoneField'
 
+//A custom component representing the list of phones of a contact
 export default function PhoneList({ initPhones }) {
     const [phones, setPhones] = useState(initPhones);
 

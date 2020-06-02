@@ -5,6 +5,7 @@ import {showAlert} from '../Components/Alert'
 import {callDeleteContact} from '../APIManager'
 const { useContext } = React;
 
+//A custom component representing the modal asking user for contact delete verification
 export default function DeleteModal({isShowing, hide, contact}) {
 	const [state, dispatch] = useContext(ContactContext);
 		const deleteContact = async(_id) => {

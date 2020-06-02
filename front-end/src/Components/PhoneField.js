@@ -1,6 +1,7 @@
 import React from 'react';
 import {useFormContext} from 'react-hook-form'
 
+//A custom component representing an entry in the list of phones of a contact (input field with delete button)
 export default function PhoneField({phone, index, handleChangeInput, handleRemoveClick}) {
 		const methods = useFormContext();
 		const {errors, register} = methods;

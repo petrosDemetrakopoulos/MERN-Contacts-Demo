@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import DeleteModal from "./DeleteModal";
 
+//A custom component representing the card of a contact in the contact list
 export default function ContactCard({ contact }) {
   const [isShowing, setIsShowing] = useState(false);
 
