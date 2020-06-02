@@ -82,38 +82,38 @@ Note: Make sure that a local instance of MongoDB is running in your computer. Yo
 The front-end part of the application is developed with React.JS. The initial project was generated using `create-react-app` generator.
 
 The code has the following structure
-├── README.md
-├── package-lock.json
-├── package.json
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   └── robots.txt
-├── src
-│   ├── APIManager.js
-│   ├── App.css
-│   ├── App.js
-│   ├── App.test.js
-│   ├── Components
-│   │   ├── Alert.js
-│   │   ├── ContactCard.js
-│   │   ├── ContactForm.js
-│   │   ├── ContactList.js
-│   │   ├── DeleteModal.js
-│   │   ├── PhoneField.js
-│   │   └── PhoneList.js
-│   ├── Context
-│   │   └── ContactContext.js
-│   ├── Pages
-│   │   ├── ContactFormPage.js
-│   │   └── ContactListPage.js
-│   ├── index.css
-│   ├── index.js
-│   └── setupTests.js
-└── yarn.lock
+    ├── README.md
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── favicon.ico
+    │   ├── index.html
+    │   ├── logo192.png
+    │   ├── logo512.png
+    │   ├── manifest.json
+    │   └── robots.txt
+    ├── src
+    │   ├── APIManager.js
+    │   ├── App.css
+    │   ├── App.js
+    │   ├── App.test.js
+    │   ├── Components
+    │   │   ├── Alert.js
+    │   │   ├── ContactCard.js
+    │   │   ├── ContactForm.js
+    │   │   ├── ContactList.js
+    │   │   ├── DeleteModal.js
+    │   │   ├── PhoneField.js
+    │   │   └── PhoneList.js
+    │   ├── Context
+    │   │   └── ContactContext.js
+    │   ├── Pages
+    │   │   ├── ContactFormPage.js
+    │   │   └── ContactListPage.js
+    │   ├── index.css
+    │   ├── index.js
+    │   └── setupTests.js
+    └── yarn.lock
 
  ### Architectural choices
 * I used **React hooks**  and **React Context API** for the state management. React Hooks offer an alternative to writing class-based components by allowing us to handle state management from functional components. Of course it is something we could have done with react-redux library, however React hooks seems to be the modern way of handling state in React and offers much more possibilities in a more lightweight way. 
