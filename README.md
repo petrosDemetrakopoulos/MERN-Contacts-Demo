@@ -107,7 +107,8 @@ The code has the following structure
     │   │   ├── PhoneField.js
     │   │   └── PhoneList.js
     │   ├── Context
-    │   │   └── ContactContext.js
+    │   │   ├── ContactContext.js
+    │   │   └── ContactReducer.js
     │   ├── Pages
     │   │   ├── ContactFormPage.js
     │   │   └── ContactListPage.js
