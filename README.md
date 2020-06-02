@@ -82,6 +82,7 @@ Note: Make sure that a local instance of MongoDB is running in your computer. Yo
 The front-end part of the application is developed with React.JS. The initial project was generated using `create-react-app` generator.
 
 The code has the following structure
+    
     ├── README.md
     ├── package-lock.json
     ├── package.json
