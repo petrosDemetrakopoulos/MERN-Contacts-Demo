@@ -62,7 +62,7 @@ export default function ContactForm({ contact }) {
       </h1>{" "}
       <FormContext {...methods}>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="form-group">
+          <div className="form-group" >
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -105,7 +105,7 @@ export default function ContactForm({ contact }) {
             />
           </div>
           <PhoneList initPhones={phones}/>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary saveBtn">
             <span className="fa fa-save" aria-hidden="true"></span> Save
           </button>
         </form>

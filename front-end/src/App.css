@@ -29,6 +29,17 @@
   color: white;
 }
 
+.full-width{
+  width: 100%;
+}
+
+.saveBtn {
+  width: 10em;
+}
+
+.telCell {
+  width: 15em;
+}
 .error-msg {
   color: red;
   font-size: 15px;

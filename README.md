@@ -126,7 +126,7 @@ The code has the following structure
     * They are easier to read, test and maintain
     * The are more lightweight than class based components
 
-* **Styling**: For styling I used the **bootstrap** framework which offers many pretty components and CSS classes. In some points it was essential to write custom CSS (which I tried to do in an external CSS file and not in-line for code readability / best practices reasons)
+* **Styling**: For styling I used the **Bootstrap** framework which offers many pretty components and CSS classes. In some points it was essential to write custom CSS (which I tried to do in an external CSS file and not in-line for code readability / best practices reasons)
 
 * **Validations** of emails and phones values in the front-end are performed dynamically (as the user types in the related fields) and the app notifies the user for non-valid data with annotations in the bottom of the fields.
 

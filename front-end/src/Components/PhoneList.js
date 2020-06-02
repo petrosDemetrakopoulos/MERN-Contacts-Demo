@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-//import { useForm, FormContext, useFormContext } from 'react-hook-form';
 import PhoneField from './PhoneField'
 
 export default function PhoneList({ initPhones }) {
     const [phones, setPhones] = useState(initPhones);
-   // const methods = useFormContext();
 
     const handleAddClick = () => {
         setPhones([
@@ -25,7 +23,8 @@ export default function PhoneList({ initPhones }) {
   };
 
     return (
-        <div className="form-group">
+        <div className="form-group telCell">
+       <label>Phones</label>
    		{phones && phones.map((phone, index) => (
    			<PhoneField phone={phone} 
    			index={index} 
@@ -33,7 +32,7 @@ export default function PhoneList({ initPhones }) {
    			handleChangeInput={handleChangeInput}
    			handleRemoveClick={handleRemoveClick}/>
    			))}
-		<button type="button" className="btn btn-primary" onClick={() => handleAddClick()}><span className="fa fa-plus" aria-hidden="true"></span> Add phone </button>
+		<button type="button" className="btn btn-success full-width" onClick={() => handleAddClick()}><span className="fa fa-plus" aria-hidden="true"></span> Add phone </button>
 		</div>
     );
 }
