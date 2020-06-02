@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "The API of our demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "nyc mocha --check-leaks --timeout 12000 --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0",
+    "supertest": "^4.0.2"
+  }
+}
